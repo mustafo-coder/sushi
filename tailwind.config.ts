@@ -9,7 +9,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        interphases: 'var("--font-interphases")',
+        poppins: '"Poppins", sans-serif',
       },
       container: {
         center: true,
