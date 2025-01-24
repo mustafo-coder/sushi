@@ -1,35 +1,37 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import localFont from 'next/font/local';
+import localFont from "next/font/local";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 const interphases = localFont({
   src: [
     {
-      path: '@/assets/fonts/TTInterphases/TT Interphases Pro Trial Light.ttf',
-      weight: '100',
+      path: "@/assets/fonts/TTInterphases/TT Interphases Pro Trial Light.ttf",
+      weight: "100",
     },
     {
-      path: '@/assets/fonts/TTInterphases/TT Interphases Pro Trial Thin.ttf',
-      weight: '200',
+      path: "@/assets/fonts/TTInterphases/TT Interphases Pro Trial Thin.ttf",
+      weight: "200",
     },
     {
-      path: '@/assets/fonts/TTInterphases/TT Interphases Pro Trial Regular.ttf',
-      weight: '300',
+      path: "@/assets/fonts/TTInterphases/TT Interphases Pro Trial Regular.ttf",
+      weight: "300",
     },
     {
-      path: '@/assets/fonts/TTInterphases/TT Interphases Pro Trial Medium.ttf',
-      weight: '300',
+      path: "@/assets/fonts/TTInterphases/TT Interphases Pro Trial Medium.ttf",
+      weight: "300",
     },
     {
-      path: '@/assets/fonts/TTInterphases/TT Interphases Pro Trial Bold.ttf',
-      weight: '700',
+      path: "@/assets/fonts/TTInterphases/TT Interphases Pro Trial Bold.ttf",
+      weight: "700",
     },
     {
-      path: '@/assets/fonts/TTInterphases/TT Interphases Pro Trial ExtraBold.ttf',
-      weight: '900',
+      path: "@/assets/fonts/TTInterphases/TT Interphases Pro Trial ExtraBold.ttf",
+      weight: "900",
     },
   ],
-  variable: '--font-interphases',
+  variable: "--font-interphases",
 });
 
 export const metadata: Metadata = {
@@ -44,10 +46,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${interphases.className} font-interphases antialiased`}
-      >
+      <body className={`${interphases.className} font-interphases antialiased`}>
+        <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );
