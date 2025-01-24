@@ -8,9 +8,17 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        interphases: 'var("--font-interphases")',
+      },
+      container: {
+        center: true,
+      },
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        primary: "#E07153",
+        secondary: "#A1DCDC",
+        dark: "#1B1B1B",
+        third: "#62E2B4",
       },
     },
   },
