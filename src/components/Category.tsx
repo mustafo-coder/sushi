@@ -68,14 +68,27 @@ export default function Category() {
   ];
 
   return (
-    <div className="container mx-auto px-4">
-      <div>
-        <h1 className="text-4xl font-bold flex items-center">
+    <div className="container mx-auto px-4 py-6">
+      <div className="max-w-7xl mx-auto">
+        <h1 className="text-4xl font-bold flex items-center flex-wrap gap-2 mb-6 max-sm:text-3xl justify-center">
           Категории{" "}
-          <img src="./icon777.svg" alt="icon" width={64} height={64} />
+          <img
+            src="./icon777.svg"
+            alt="icon"
+            className="w-16 h-16 max-sm:w-12 max-sm:h-12"
+          />
         </h1>
         <CategorySwipper />
-        <div className="grid grid-cols-3 gap-6 mt-6 max-md:grid-cols-2">
+        <div
+          className="grid gap-6 mt-6 mx-auto max-w-6xl
+          grid-cols-3
+          xl:grid-cols-3 
+          lg:grid-cols-2 
+          md:grid-cols-2 
+          sm:grid-cols-1 
+          max-sm:gap-4
+          justify-items-center"
+        >
           {pizzas.map((pizza, index) => (
             <PizzaCard
               key={index}
