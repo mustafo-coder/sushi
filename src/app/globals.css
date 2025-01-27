@@ -19,3 +19,16 @@
     scrollbar-width: none;
   }
 }
+
+:root {
+  --primary: #e76f51;
+}
+
+body {
+  background: #f9fafb;
+}
+
+.benefit-icon {
+  width: 198px;
+  height: 181px;
+}
