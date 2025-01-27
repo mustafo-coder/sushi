@@ -32,7 +32,7 @@ const PizzaCard: React.FC<PizzaCardProps> = ({
           alt={name}
           width={392}
           height={256}
-          className="w-full object-cover"
+          className="w-full object-cover select-none"
         />
         <div className="absolute top-2 right-2 bg-white text-gray-800 text-sm rounded-full px-2 py-1 shadow">
           +150 ₽

@@ -80,7 +80,7 @@ export default function Category() {
         </h1>
         <CategorySwipper />
         <div
-          className="grid gap-6 mt-6 mx-auto max-w-6xl
+          className="grid gap-6 mt-6 mx-auto w-full 
           grid-cols-3
           xl:grid-cols-3 
           lg:grid-cols-2 
