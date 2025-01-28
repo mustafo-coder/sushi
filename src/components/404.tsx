@@ -1,5 +1,5 @@
-import Link from "next/link"
-import Image from "next/image"
+import Link from "next/link";
+import Image from "next/image";
 
 export default function NotFound() {
   return (
@@ -9,7 +9,9 @@ export default function NotFound() {
           {/* The 404 numbers and illustration container */}
           <div className="absolute inset-0 flex items-center justify-center">
             {/* Left 404 number */}
-            <div className="text-[120px] md:text-[200px] font-light text-[#e85d3d]/10 leading-none">4</div>
+            <div className="text-[120px] md:text-[200px] font-light text-[#e85d3d]/10 leading-none">
+              4
+            </div>
 
             {/* Center illustration */}
             <div className="w-[180px] md:w-[220px] h-[180px] md:h-[220px] relative mx-4">
@@ -23,14 +25,19 @@ export default function NotFound() {
             </div>
 
             {/* Right 404 number */}
-            <div className="text-[120px] md:text-[200px] font-light text-[#e85d3d]/10 leading-none">4</div>
+            <div className="text-[120px] md:text-[200px] font-light text-[#e85d3d]/10 leading-none">
+              4
+            </div>
           </div>
         </div>
 
-        <h1 className="text-2xl md:text-3xl font-medium mb-4 text-gray-800">Страница не найдена</h1>
+        <h1 className="text-2xl md:text-3xl font-medium mb-4 text-gray-800">
+          Страница не найдена
+        </h1>
 
         <p className="text-gray-600 mb-8 max-w-[400px] mx-auto">
-          Извините, но страницу, которую Вы пытаетесь найти - не существует. Предлагаем Вам перейти на Главную страницу
+          Извините, но страницу, которую Вы пытаетесь найти - не существует.
+          Предлагаем Вам перейти на Главную страницу
         </p>
 
         <Link
@@ -41,6 +48,5 @@ export default function NotFound() {
         </Link>
       </div>
     </main>
-  )
+  );
 }
-

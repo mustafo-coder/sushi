@@ -6,8 +6,8 @@ import React from "react";
 const HomePage = () => {
   return (
     <div>
-      <Category />
       <Hero />
+      <Category />
     </div>
   );
 };
