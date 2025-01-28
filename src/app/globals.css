@@ -8,7 +8,6 @@
     @apply px-5 lg:px-10;
   }
 }
-
 @layer utilities {
   .no-scrollbar::-webkit-scrollbar {
     display: none;
@@ -31,4 +30,14 @@ body {
 .benefit-icon {
   width: 198px;
   height: 181px;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
 }

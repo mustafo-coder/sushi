@@ -14,6 +14,10 @@ export default {
       container: {
         center: true,
       },
+      backgroundImage: {
+        primary:
+          'url("/home/nurmurod/Desktop/sushi/sushi/src/assets/images/orqafon.png")',
+      },
       colors: {
         primary: "#E07153",
         secondary: "#A1DCDC",
