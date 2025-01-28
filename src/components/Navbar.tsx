@@ -30,15 +30,14 @@ export default function Navbar() {
 
   return (
     <nav className="w-full bg-white shadow-sm">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="flex h-20 items-center justify-between">
-          <Link href="/" className="flex items-center">
+      <div>
+        <div className="flex container h-20 items-center justify-between">
+          <Link href="/" className="flex relative top-14 items-center">
             <Image
               src="/logo.svg"
               alt="Riksha Logo"
               width={134}
               height={156}
-              className="absolute left-[348px] top-4 sm:left-[348px] lg:left-[148px]"
             />
           </Link>
 
@@ -165,28 +164,30 @@ export default function Navbar() {
           </div>
         )}
 
-        <div className="border-t">
-          <div className="no-scrollbar overflow-x-auto pb-4 pl-48">
-            <div className="flex min-w-max space-x-[34px] pr-9">
-              {foodCategories.map((category) => (
-                <Link
-                  key={category.title}
-                  href={category.href}
-                  className="flex flex-col items-center space-y-3 py-7"
-                >
-                  <div className="flex h-12 w-12 items-center justify-center rounded-full bg-gray-100">
-                    <Image
-                      src={category.icon || "/placeholder.svg"}
-                      alt={category.title}
-                      width={24}
-                      height={24}
-                    />
-                  </div>
-                  <span className="text-sm font-thin text-gray-700">
-                    {category.title}
-                  </span>
-                </Link>
-              ))}
+        <div className="border-t bg-[#F5F5F5]">
+          <div className="container">
+            <div className="no-scrollbar overflow-x-auto pb-4 pl-48">
+              <div className="flex min-w-max space-x-[34px] pr-9">
+                {foodCategories.map((category) => (
+                  <Link
+                    key={category.title}
+                    href={category.href}
+                    className="flex flex-col items-center space-y-3 py-7"
+                  >
+                    <div className="flex h-12 w-12 items-center justify-center rounded-full bg-gray-100">
+                      <Image
+                        src={category.icon || "/placeholder.svg"}
+                        alt={category.title}
+                        width={24}
+                        height={24}
+                      />
+                    </div>
+                    <span className="text-sm font-thin text-gray-700">
+                      {category.title}
+                    </span>
+                  </Link>
+                ))}
+              </div>
             </div>
           </div>
         </div>
